@@ -7,7 +7,7 @@ const taskDurationInput = document.getElementById('task-duration');
 const addTaskBtn = document.getElementById('add-task-btn');
 const taskList = document.getElementById('task-list');
 
-let timeLeft = 25 * 60; // Initial time in seconds
+let timeLeft = 30 * 60; // Initial time in seconds
 let timerId;
 
 // At any point, a new task can be added to the task list. 
@@ -59,7 +59,7 @@ function pauseTimer() {
 /** Resets the timer back to the original time alloted */
 function resetTimer() {
     clearInterval(timerId);
-    timeLeft = 25 * 60;
+    timeLeft = 30 * 60;
     updateTimerDisplay();
     // Change button to "Start"
     startBtn.textContent = "Start";
